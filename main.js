@@ -100,22 +100,6 @@ const renderRecipes = (recipeList = []) => {
       });
 };
 
-    // function loadRecommendation(type = 'chicken'){
-    //     const rUrl = baseUrl + `&q=${type}`;
-    //     fetch(rUrl)
-    //         .then((res) => res.json())
-    //         .then((data) => renderRecipes(data.hits))
-    //         .catch((error) => console.log(error));
-    // }
-
-
-    // const rBootStrapHTMLStr = `
-    // <div class="container py-5">
-    // <h2 class="text-center mt-5">Today's Recommendation:</h2>
-    //     <div class="row row-cols-1 row-cols-md-3 g-4 py-5" id="mealRecommendation">
-    //     </div>
-    // </div>
-    // `;
 
     
   

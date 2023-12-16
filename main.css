@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
  
@@ -20,6 +24,9 @@ nav .container .offcanvas-body .navbar-nav .nav-item a {
     color: white;
     font-weight: 500;
     
+}
+.navbar .container .sidebar .navbar-nav .nav-item a{
+    color: white;
 }
 
 nav .container .offcanvas-body .navbar-nav .nav-item a:hover{
@@ -49,7 +56,7 @@ nav.sticky{
 }
 
 nav.stickyadd{
-    /* background: rgb(185, 167, 167); */
+   
     background: rgb(223, 211, 211);
     padding: 15px;
     box-shadow: 0 1px 8px 3px rgba(0,0,0,0.05);
@@ -63,10 +70,12 @@ nav.stickyadd .container .navbar-brand{
     color: black;
 
 }
-
-.navbar .container .sidebar .navbar-nav .nav-item a{
-    color: white;
+nav .container .offcanvas-body .navbar-nav .nav-item a:hover{
+    transform: translate(0px, -5px);
+    transition: .5s;
+    background-color: white;
 }
+
 
 /* header */
 .header-content{
