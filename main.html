@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="fa-solid fa-magnifying-glass">Recipe Finder</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark-bg-transparent sticky fixed-top  ">
+    <div class="container">
+      <a class="navbar-brand fs-4 " href="#"><i class="fa-solid fa-magnifying-glass me-3 fs-2 "></i>Recipe Finder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span><i class="fa-solid fa-bars text-white  border-0 shadow-none"></i></span>
+      </button>
+
+      <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+
+        <div class="offcanvas-header text-white border-bottom">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel "><i
+              class="fa-solid fa-magnifying-glass me-3  "></i>Recipe Finder</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div
+          class="offcanvas-body  d-flex flex-column flex-lg-row p-4 p-lg-0 justify-content-center align-items-center text-white">
+          <ul class="navbar-nav d-flex align-items-center  justify-content-center  gap-5  flex-grow-1 pe-3">
+            <li class="nav-item mx-2">
+              <a class="nav-link active " aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link " href="#about">About</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link " href="#recommendation">Popular</a>
+            </li>
+          </ul>
+          <div class=" d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+            <a href="login.html" class="sign-up  text-decoration-none px-3 py-1 rounded-4">Login</a>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <header id="home">
+    <div class="container-fluid header-content">
+      <div class="content-box text-center">
+        <h1><span class="element"></span></h1>
+        <div class="input-group mb-3  ">
+          <input type="text" class="form-control" id="searchRecipe" placeholder="Search Favorite">
+          <button class="input-group-text" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <div class="meal-result " id="meal-result">
+    <!-- <h2 class="text-center mt-5">Your Search Result:</h2> -->
+    <!-- <div class="container py-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+          <div class="col">
+            <div class="card ">
+              <img src="${recipeImage}" >
+              <div class="card-body text-center">
+                <h5 class="card-title text-start mb-3">${recipeTitle}</h5>
+              
+                <a href="#" class="recipe-btn" id= "recipeBtn">Get Recipe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+  </div>
+
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-3 ">
+          <h1 class="text-center">About Us</h1>
+
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 col-lg-6">
+            <div class="card border-0 vision-card">
+              <div class="card-body text-center">
+                <i class="fa-solid fa-eye fs-1"></i>
+                <h5 class="card-title mt-2">Our vision:</h5>
+                <p class="card-text text-start mt-3">Welcome to Food Recipe Finder, where we are passionate
+                  about making cooking an enjoyable experience.We are developing this website to help
+                  individuals to
+                  explore and
+                  discover by providing a user-friendly recipe finder platform that caters to varied
+                  tastes. </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="card border-0 mission-card">
+              <div class="card-body text-center">
+                <i class="fa-solid fa-rocket fs-1"></i>
+                <h5 class="card-title mt-2">Our mission:</h5>
+                <p class="card-text text-start mt-3">We are on a mission to simplify and enhance your cooking
+                  experience
+                  by providing easy acces to a diverse range of delicious recipes. Whether you are a
+                  seasoned chef or a beginner in the kitchen, our goal is to inspire and support you
+                  to make a delightful dishes. </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center mt-5">
+          <i class="fa-solid fa-people-group fs-1">
+          </i>
+          <h5>Our Team:</h5>
+        </div>
+        <div class="row mt-3">
+          <div class="col-4 text-center">
+            <div class="team-icon ">
+              <i class="fa-regular fa-user"></i>
+              <div class="text-center">
+                <h5>Suwandi</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="team-icon ">
+              <i class="fa-regular fa-user"></i>
+              <div class="text-center">
+                <h5>Jason</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="team-icon ">
+              <i class="fa-regular fa-user"></i>
+              <div class="text-center">
+                <h5>Alif</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="recommendation" id="recommendation">
+    <div class="container py-5">
+      <h2 class="text-center mt-5 fs-3">Most <span class="px-4 fs-1">Popular</span> Food</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+        <div class="col">
+          <div class="card">
+            <img src="beef.jpeg" alt="" class="card-img-top p-2">
+            <div class="card-body text-start">
+              <h5 class="card-title  mb-3">
+                Roast Sirloin of beef
+              </h5>
+              <p>Ingredients:</p>
+              <div class=" card-text ">
+                <ul class=" list-group list-group-flush px-3">
+                  <li>2 tbsp vegetable oil or beef fat </li>
+                  <li>1-1½kg/2lb 4-3lb 5oz sirloin of beef joint</li>
+                  <li>1 glass red wine</li>
+                  <li>400g can beef consommé</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="chicken.jpeg" alt="" class="card-img-top p-2">
+            <div class="card-body text-start">
+              <h5 class="card-title  mb-3">
+                Grilled Red Curry Chicken
+              </h5>
+              <p>Ingredients:</p>
+              <div class=" card-text ">
+                <ul class=" list-group list-group-flush px-3">
+                  <li>One 3-pound chicken, wing tips removed </li>
+                  <li>1/4 cup unsweetened coconot milk</li>
+                  <li>2 tablespoons red curry paste</li>
+                  <li>1 teaspoons dark brown sugar</li>
+                  <li>Salt and freshly ground pepper</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="cake.jpeg" alt="" class="card-img-top p-2">
+            <div class="card-body text-start">
+              <h5 class="card-title  mb-3">
+                Teapot Cake
+              </h5>
+              <p>Ingredients:</p>
+              <div class=" card-text ">
+                <ul class=" list-group list-group-flush px-3">
+                  <li>2 package pound cake mix </li>
+                  <li>1/2 c. buttermilk</li>
+                  <li>4 eggs</li>
+                  <li>3 table spoons fresh lemon juice</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container  d-flex justify-content-center align-items-center    ">
+      <div class="row">
+        <div class="col">
+          <div class="footer-text text-center mt-5 ">
+            <p><i class="fa-regular fa-copyright"></i>Copyright| HCI Final Project | All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
+  <script src="main.js" defer></script>
+</body>
+
+</html>

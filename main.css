@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+ 
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5)), url('mainpage.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+nav .container .navbar-brand,
+nav .container .offcanvas-body .navbar-nav .nav-item a {
+    color: white;
+    font-weight: 500;
+    
+}
+
+nav .container .offcanvas-body .navbar-nav .nav-item a:hover{
+    background-color: rgba(230, 207, 207, 0.438);
+    border-radius: 20px;
+    color: black;
+    transition: .3s all;
+}
+
+
+
+nav .container .offcanvas-body .sign-up{
+    background-color: red;   
+    color: white;
+}
+
+nav .container .offcanvas-body .sign-up:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
+nav.sticky{
+    background: transparent;
+    padding: 10px 0;
+    transition: .5s all;
+}
+
+nav.stickyadd{
+    /* background: rgb(185, 167, 167); */
+    background: rgb(223, 211, 211);
+    padding: 15px;
+    box-shadow: 0 1px 8px 3px rgba(0,0,0,0.05);
+    transition: .5s all;
+    
+}
+
+
+nav.stickyadd .container .offcanvas-body .navbar-nav .nav-item a,
+nav.stickyadd .container .navbar-brand{
+    color: black;
+
+}
+
+.navbar .container .sidebar .navbar-nav .nav-item a{
+    color: white;
+}
+
+/* header */
+.header-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box{
+    max-width: 700px;
+    color: white;
+}
+
+.content-box .form-control{
+    border-radius: 40px;
+    color: black;
+}
+
+.content-box .input-group .input-group-text i{
+    color: black;
+    font-size: 30px;
+
+}
+
+/* search result */
+.meal-result{
+    background-color: rgb(235, 226, 226);
+    
+
+}
+
+.meal-result .card{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;    
+}
+
+.meal-result .card img{
+    border-radius: 20px ;
+    
+}
+
+
+
+.meal-result .card .card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+ 
+.meal-result .card .card-body .card-title{
+    border-bottom: 1px solid black;
+}
+
+.meal-result .card .card-body p{
+    font-size: 20px;
+    font-weight: 30px;
+    
+}
+
+/* not found */
+.notFound{
+   color: black;
+   grid-template-columns: 1fr !important;
+}
+
+
+/* about section */
+
+.about{
+    height: 110vh;
+    background-color: rgb(201, 189, 189);
+}
+
+.about .container .card{
+    background-color: transparent;
+}
+
+.about .container .team-icon{
+    font-size: 30px;
+}
+
+
+
+/* popular food section */
+.recommendation{
+    background-color: rgb(235, 226, 226);
+}
+
+footer{
+    height: 100px;
+    background-color: rgb(180, 168, 168);
+}
+
+footer .container p i{
+    margin-right: 5px;
+   
+}
+
+@media (max-width: 991px){
+    .sidebar{
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+    .meal-item{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+}
+
+@media (min-width:600px){
+    .content-box .form-control{
+        width: 400px;
+
+    }
+
+    
+ 
+}
+@media (min-width:1000px){
+    .content-box .form-control{
+        width: 600px;
+
+    }
+}
