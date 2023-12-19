@@ -165,6 +165,32 @@ nav .container .offcanvas-body .navbar-nav .nav-item a:hover{
     background-color: rgb(235, 226, 226);
 }
 
+.recommendation .card{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;    
+}
+
+.recommendation .card img{
+    border-radius: 20px;
+        
+}
+
+.recommendation  .card .card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+
+.recommendation .card .card-body .card-title{
+    border-bottom: 1px solid black;
+}
+
+
+.recommendation .card .card-body p{
+    font-size: 20px;
+    font-weight: 30px;
+    
+}
+
 footer{
     height: 100px;
     background-color: rgb(180, 168, 168);
